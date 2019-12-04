@@ -1,0 +1,216 @@
+* {
+    box-sizing: border-box;
+}
+body {
+    background-color: lightskyblue;
+}
+footer {
+    text-align: center;
+}
+#nav {
+    width: 600px;
+    list-style: none;
+    display: flex;
+    margin: auto;
+    justify-content: space-around;
+    margin-bottom: 40px;
+    margin-top: 25px;
+}
+button {
+    width: 100px;
+    padding: 4px;
+    border-radius: 15px;
+    border-style: groove;
+    transition: all ease 500ms;
+    background-color: orange;
+}
+button:hover {
+    box-shadow: 0px 0px 5px 3px white;
+    transition: all ease 500ms;
+}
+#button {
+    width: 100px;
+    padding: 2px;
+    border-radius: 5px;
+    border-style: groove;
+}
+#game-area {
+    display: flex;
+    justify-content: center;
+}
+#left-game-area {
+    width: 120px;
+    margin-right: 30px;
+}
+.score {
+    width: 100%;
+    margin-bottom: 30px;
+    font-weight: bolder;
+    padding: 5px 10px;
+    border: 2px solid rgb(35, 39, 35);
+    border-radius: 3px;
+}
+.next {
+    width: 100%;
+    margin-bottom: 30px;
+    font-weight: bolder;
+    font-size: 20px;
+}
+.next p {
+    padding: 0;
+    margin: 0 0 30px 20px;
+}
+#right-game-area {
+    width: 120px;
+    margin-left: 30px;
+}
+#game-box {
+    box-sizing: content-box;
+    border: 5px solid rgb(35, 39, 35);
+}
+#next-figure table {
+    box-sizing: content-box;
+    border-collapse: collapse;
+    margin: auto;
+}
+#next-figure td {
+    width:20px;
+    height:20px;
+}
+
+
+
+
+
+#game-box table {
+    box-sizing: content-box;
+    border-collapse: collapse;
+    margin: auto;
+}
+
+
+#game-box td {
+    border:solid black 1px;
+    width:30px;
+    height:30px;
+}
+.cell-empty {
+    background-color: black;
+}
+.cell-empty-next {
+    background-color: lightskyblue;
+    border:solid black 0px;
+}
+.cell-I {
+    background-color: red;
+}
+.cell-O {
+    background-color: blue;
+}
+.cell-T {
+    background-color: orange;
+}
+.cell-S {
+    background-color: green;
+}
+.cell-Z {
+    background-color: teal;
+}
+.cell-J {
+    background-color: purple;
+}
+.cell-L {
+    background-color: silver;
+}
+#next-figure .cell-I {
+    background-color: red;
+    border: solid 1px black;
+}
+#next-figure .cell-O {
+    background-color: blue;
+    border: solid 1px black;
+}
+#next-figure .cell-T {
+    background-color: orange;
+    border: solid 1px black;
+}
+#next-figure .cell-S {
+    background-color: green;
+    border: solid 1px black;
+}
+#next-figure .cell-Z {
+    background-color: teal;
+    border: solid 1px black;
+}
+#next-figure .cell-J {
+    background-color: purple;
+    border: solid 1px black;
+}
+#next-figure .cell-L {
+    background-color: silver;
+    border: solid 1px black;
+}
+
+
+.hidden {
+    display: none;
+}
+
+.visible {
+    display: flex;
+    padding: 0;
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+}
+
+#high-score {
+    position: relative;
+    margin: auto;
+}
+
+#hide-high-score-btn {
+    position: absolute;
+    padding: 0;
+    top: 42px;
+    left: 465px;
+    width: 30px;
+    margin: auto;
+    background-color: rgb(17, 89, 92);
+}
+
+#high-score table {
+    margin-top: 50px;
+    border: solid 2px black;
+    background-color: teal;
+    color: white;
+}
+#high-score td, #high-score th{
+    padding: 4px 30px;
+    border: solid black 1px;
+}
+
+@media screen and (max-width: 1366px) and (min-width: 801px) {
+    #game-area #game-box td {
+        border:solid black 1px;
+        width:25px;
+        height:25px;
+    }
+    .next #next-figure td {
+        width:16px;
+        height:16px;
+    }
+}
+
+@media screen and (max-width: 800px) {
+    #game-area #game-box td {
+        border:solid black 1px;
+        width:20px;
+        height:20px;
+    }
+    .next #next-figure td {
+        width:12px;
+        height:12px;
+    }
+}
